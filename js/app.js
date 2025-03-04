@@ -24,6 +24,8 @@ function comprar(){
         }else if(meuSelected == "inferior"){
             inferior = inferior - qtd;
             document.getElementById("qtd-inferior").innerHTML = inferior
+        }else{
+            alert("Seleção invalida")
         }
     }
     verificaIngreso(pista,superior,inferior,meuSelected);
