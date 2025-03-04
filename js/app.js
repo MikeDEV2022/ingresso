@@ -12,7 +12,7 @@ function comprar(){
     let meuSelected = select.options[select.selectedIndex].value;
 
     // Estrutura condicional
-    if(qtd == 0 || qtd == null){
+    if(qtd < 1 || qtd == null){
         alert("Digite a quantidade de ingresos que deseja comprar!")
     }else{
         if(meuSelected == "pista"){
